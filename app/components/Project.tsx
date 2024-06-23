@@ -20,6 +20,7 @@ export default function Project() {
         "Apollo",
         "TypeScript",
       ],
+      imageSrc: "/nbaShotchart.webp",
     },
     {
       title: "SpotifyQ",
@@ -39,9 +40,9 @@ export default function Project() {
         "jQuery",
         "Django",
         "PyUnit",
-        "OAuth",
-        "MVC",
+        "OAuth 2.0",
       ],
+      imageSrc: "/spotifyq.webp",
     },
   ];
 

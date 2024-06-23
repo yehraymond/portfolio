@@ -33,16 +33,14 @@ export default function DarkModeBtn() {
   }, [isDarkMode]);
 
   return (
-    <div className="flex justify-center my-2 md:my-auto">
-      <Switch
-        size="lg"
-        isSelected={!isDarkMode}
-        onChange={() => toggleDarkMode(!isDarkMode)}
-        color="success"
-        startContent={<SunIcon />}
-        endContent={<MoonIcon />}
-        className="ml-2"
-      />
-    </div>
+    <Switch
+      size="lg"
+      isSelected={!isDarkMode}
+      onChange={() => toggleDarkMode(!isDarkMode)}
+      color="success"
+      startContent={<SunIcon />}
+      endContent={<MoonIcon />}
+      className="ml-2"
+    />
   );
 }

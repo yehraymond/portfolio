@@ -94,7 +94,9 @@ export default function NavBar() {
                 text="Education"
                 onClick={() => setIsOpen(false)}
               />
-              <DarkModeBtn />
+              <li className="flex justify-center md:my-2 my-4">
+                <DarkModeBtn />
+              </li>
             </ul>
           </nav>
         </div>

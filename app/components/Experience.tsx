@@ -81,7 +81,6 @@ export default function Experience() {
         "Maven",
         "Jenkins",
         "Mockito",
-        "Gerrit",
         "Git",
       ],
     },
