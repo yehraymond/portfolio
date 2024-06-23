@@ -14,7 +14,7 @@ export default function About() {
         />
       </div>
       <div className="flex flex-col justify-center w-full ml-6 md:ml-9">
-        <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+        <h2 className="text-4xl font-bold tracking-tight sm:text-5xl dark:text-light">
           Raymond Yeh
         </h2>
         <SocialMedia />

@@ -10,7 +10,7 @@ export default function Section({ title, children }: SectionProps) {
       id={title}
       className="flex flex-col mx-auto py-5 px-10 max-w-screen-lg scroll-mt-12"
     >
-      <h2 className="font-bold uppercase tracking-widest">{title}</h2>
+      <h2 className="font-bold uppercase tracking-widest dark:text-light">{title}</h2>
       {children}
     </section>
   );

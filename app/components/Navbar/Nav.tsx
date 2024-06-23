@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import styles from "./Nav.module.css";
 import NavItem from "./NavItem";
 
 export default function NavBar() {
@@ -19,7 +20,9 @@ export default function NavBar() {
         <div className="flex items-center justify-between md:block outline-none border-none select-none">
           {/* LOGO */}
           <Link href="/">
-            <h2 className="text-2xl text-blue-800 font-bold">RY</h2>
+            <h2 className="text-2xl text-blue-800 font-bold dark:text-dark">
+              RY
+            </h2>
           </Link>
           {/* HAMBURGER BUTTON FOR MOBILE */}
           <div className="md:hidden">
@@ -28,21 +31,30 @@ export default function NavBar() {
               onClick={toggleMenu}
             >
               {isOpen ? (
-                <Image
-                  src="/close.svg"
-                  width={30}
-                  height={30}
-                  alt="close-menu"
-                  className="select-none drag-none"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="size-7 dark:fill-dark"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               ) : (
-                <Image
-                  src="/hamburger-menu.svg"
-                  width={30}
-                  height={30}
-                  alt="hamburger-menu"
-                  className="select-none drag-none"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-7 dark:fill-dark"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               )}
             </button>
           </div>
@@ -52,7 +64,7 @@ export default function NavBar() {
         <div
           className={`md:block ${isOpen ? "h-screen ease-in-out" : "hidden"}`}
         >
-          <nav className="flex flex-col items-center justify-center">
+          <nav className="flex flex-col items-center justify-center h-full">
             <ul
               className={`md:h-auto md:flex font-semibold text-sm text-slate-700`}
             >

@@ -6,7 +6,7 @@ export default function SocialMedia() {
     >
       <li className="mr-5 text-xs shrink-0">
         <a
-          className="block hover:text-slate-200"
+          className="block hover:text-slate-200 dark:text-dark dark:hover:text-light"
           href="https://www.linkedin.com/in/yehraymond/"
           target="_blank"
           rel="noreferrer noopener"
@@ -27,7 +27,7 @@ export default function SocialMedia() {
       </li>
       <li className="mr-5 text-xs shrink-0">
         <a
-          className="block hover:text-slate-200"
+          className="block hover:text-slate-200 dark:text-dark dark:hover:text-light"
           href="https://github.com/yehraymond"
           target="_blank"
           rel="noreferrer noopener"
@@ -48,7 +48,7 @@ export default function SocialMedia() {
       </li>
       <li className="mr-5 text-xs shrink-0">
         <a
-          className="block hover:text-slate-200"
+          className="block hover:text-slate-200 dark:text-dark dark:hover:text-light"
           href="mailto:hi@raymondyeh.com"
           target="_blank"
           rel="noreferrer noopener"

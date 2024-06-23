@@ -9,10 +9,10 @@ interface NavItemProps {
 
 export default function NavItem({ href, text, onClick }: NavItemProps) {
   return (
-    <li className="py-4 md:px-6 text-center border-b-2 md:border-b-0 border-blue-900 md:hover:bg-transparent group">
+    <li className="py-4 md:px-6 text-center border-b-2 md:border-b-0 border-blue-900 md:hover:bg-transparent group dark:text-light dark:border-dark">
       <Link href={href} onClick={onClick}>
         {text}
-        <span className="block max-w-0 md:group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-800"></span>
+        <span className="block max-w-0 md:group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-800 dark:bg-dark"></span>
       </Link>
     </li>
   );

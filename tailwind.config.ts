@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -8,6 +9,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      ...colors,
+      midnight: "#1e293b",
+      light: "#e2e8f0",
+      dark: "#94a3b8",
+      darkBtn: "#475569"
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
