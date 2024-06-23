@@ -61,6 +61,8 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: Extract repository name
+        run: echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
       - name: Restore cache
         uses: actions/cache@v4
         with:

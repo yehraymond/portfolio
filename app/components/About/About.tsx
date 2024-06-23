@@ -1,5 +1,6 @@
 import SocialMedia from "./SocialMedia";
 import Image from "next/image";
+import { basePath } from "../../utils/basePath";
 
 export default function About() {
   return (
@@ -9,7 +10,7 @@ export default function About() {
     >
       <div className="aspect-square">
         <Image
-          src="/portrait.webp"
+          src={`${basePath}/portrait.webp`}
           width={30}
           height={30}
           alt="portrait"
