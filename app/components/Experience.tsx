@@ -43,7 +43,7 @@ export default function Experience() {
     },
     {
       title: "Software Developer Intern · SAP",
-      duration: "Jan 2021 - Apr 2021",
+      duration: "Jan - Apr 2021",
       descriptions: [
         "Migrated the backend web application architecture with a focus on increasing the performance using Java and GraphQL",
         "Improved and implemented the revamped frontend UI of SAP Concur using React and Redux",
@@ -67,7 +67,7 @@ export default function Experience() {
     },
     {
       title: "Software Development Engineer Intern · Planview",
-      duration: "Jan 2020 - Aug 2020",
+      duration: "Jan - Aug 2020",
       descriptions: [
         "Developed and maintained SDK interfacing with diverse third-party ALM, ITSM, and DevOps tools across platforms like GitHub, Microsoft Azure DevOps, Jira, Asana, and Salesforce",
         "Maintained build health and ensured successful deployment across all environments using Jenkins and Maven build tools",
