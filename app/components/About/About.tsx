@@ -1,4 +1,5 @@
 import SocialMedia from "./SocialMedia";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -7,8 +8,10 @@ export default function About() {
       className="flex place-content-between mx-auto my-10 max-w-screen-lg px-10 mt-24"
     >
       <div className="aspect-square">
-        <img
+        <Image
           src="/portrait.webp"
+          width={30}
+          height={30}
           alt="portrait"
           className="rounded-full select-none drag-none w-full max-w-64 min-w-12"
         />

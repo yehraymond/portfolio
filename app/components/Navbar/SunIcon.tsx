@@ -1,4 +1,8 @@
-export default function SunIcon() {
+import { JSX, SVGProps } from "react";
+
+export default function SunIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
+) {
   return (
     <svg
       aria-hidden="true"
@@ -7,6 +11,7 @@ export default function SunIcon() {
       role="presentation"
       viewBox="0 0 24 24"
       width="1em"
+      {...props}
     >
       <g fill="currentColor">
         <path d="M19 12a7 7 0 11-7-7 7 7 0 017 7z" />
