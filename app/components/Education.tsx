@@ -16,7 +16,9 @@ export default function Education() {
     <>
       {education.map((edu) => (
         <div className="my-2" key={edu.school}>
-          <h4 className="font-medium text-base dark:text-light">{edu.school}</h4>
+          <h4 className="font-medium text-base dark:text-light">
+            {edu.school}
+          </h4>
           <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
             {edu.duration}
           </header>

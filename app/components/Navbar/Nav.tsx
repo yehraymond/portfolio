@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import styles from "./Nav.module.css";
+import { useState } from "react";
 import NavItem from "./NavItem";
 import DarkModeBtn from "./DarkModeBtn";
 
