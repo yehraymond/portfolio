@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./Nav.module.css";
 import NavItem from "./NavItem";
+import DarkModeBtn from "./DarkModeBtn";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,6 +96,7 @@ export default function NavBar() {
                 text="Education"
                 onClick={() => setIsOpen(false)}
               />
+              <DarkModeBtn />
             </ul>
           </nav>
         </div>
